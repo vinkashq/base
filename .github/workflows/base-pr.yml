@@ -24,7 +24,7 @@ jobs:
           git fetch upstream
       - name: Merge Upstream
         run: |
-          git pull upstream main
+          git merge upstream/main --no-edit
           git push origin base
       - name: Create PR
         run: |
